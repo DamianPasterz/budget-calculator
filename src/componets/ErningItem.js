@@ -1,13 +1,13 @@
 import React from 'react'
 import { MdEdit, MdDelete } from 'react-icons/md'
 
-const ExpenseItem = ({ expense, handleEdit, handleDelete }) => {
-    const { id, charge, amount } = expense
+const ErningItem = ({ erning, handleEdit, handleDelete }) => {
+    const { id, walletCharge, walletAmount } = erning
     return (
         <li className='item'>
             <div className='info'>
-                <span className='charge' >{charge}</span>
-                <span className='amount'>${amount}</span>
+                <span className='charge' >{walletCharge}</span>
+                <span className='amount'>${walletAmount}</span>
             </div>
             <div>
                 <button className='edit-btn' aria-label="edit button" onClick={() => handleEdit(id)} >
@@ -21,4 +21,4 @@ const ExpenseItem = ({ expense, handleEdit, handleDelete }) => {
     )
 }
 
-export default ExpenseItem
+export default ErningItem

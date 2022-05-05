@@ -23,6 +23,13 @@ h1 {
   color: var(--mainWhite);
   letter-spacing: 5px;
 }
+
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem 0;
+  letter-spacing: 5px;
+}
 .App {
   margin: 0 auto;
   max-width: 1280px;
@@ -146,12 +153,13 @@ label {
   padding: 2px 5px;
 }
 .alert {
+  position: absolute;
   padding: 0.75rem 1.25rem;
   color: var(--mainWhite);
   text-align: center;
   text-transform: capitalize;
   width: 90%;
-  margin: 2rem auto 0 auto;
+  margin: auto  auto ;
   border-radius: 2px;
   text-transform: capitalize;
 }
